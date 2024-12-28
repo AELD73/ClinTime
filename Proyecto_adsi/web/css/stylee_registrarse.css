@@ -1,0 +1,291 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 8 dic. 2024, 13:22:07
+    Author     : angel
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+.contendedor_principal{
+    width: 100%;
+    display: flex;
+}
+.footer-links {
+    width: 80%;
+    padding: 0 15px;
+    margin: 40px auto;
+
+}
+.footer-links h4 {
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.footer-links p{
+    margin: 10px;
+    color: #ff0000;
+}
+.footer-links ul li {
+    font-size: 20px;
+    color: #00d2d9;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+.footer-links ul li:hover {
+    padding-left: 10px;
+    color: #fff;
+}
+
+.social-links a:hover {
+    background-color: #fff;
+}
+
+.social-links a:hover {
+    background-color: #fff;
+}
+
+.social-links p{
+    margin: 10px auto;
+}
+form {
+    display: block;
+
+    width: 100%;
+    align-items: center;
+}
+.form-content {
+    position: relative;
+}
+.form-content input {
+    padding: 17px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 2px solid #00d2d9;
+    width: 100%; /* Cambiado a 100% */
+    height: 50px;
+    outline: none;
+}
+
+.form-content label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #000;
+    pointer-events: none;
+    transition: 0.3s;
+}
+.form-content input:focus ~ label,
+.form-content textarea:focus ~ label {
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background-color: #fff;
+}
+
+.form-content-est.radio_group{
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Espacio entre los botones */
+}
+/* Contenedor principal de los radio buttons */
+.radio_group {
+    display: flex; /* Alinear los botones horizontalmente */
+    justify-content: flex-start; /* Ajustar la posición de los botones */
+    align-items: center; /* Asegurar alineación vertical */
+    gap: 20px; /* Espaciado horizontal entre los botones */
+}
+
+/* Cada botón con su etiqueta */
+.radio_button {
+    display: flex;
+    align-items: center; /* Asegurar alineación vertical entre radio y etiqueta */
+    gap: 5px; /* Espaciado entre el botón y la etiqueta */
+}
+
+.radio_button label {
+    font-size: 20px; /* Tamaño de la etiqueta */
+    color: #000; /* Color del texto */
+}
+
+/*Estilo para el efecto del contenedor de edad*/
+
+
+.form-content-edad {
+    position: relative;
+    width: 20%;
+
+}
+.form-content-edad input {
+    padding: 17px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 2px solid #00d2d9;
+    width: 100%; /* Cambiado a 100% */
+    height: 50px;
+    outline: none;
+}
+
+.form-content-edad label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #000;
+    pointer-events: none;
+    transition: 0.3s;
+}
+.form-content-edad input:focus ~ label {
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background-color: #fff;
+}
+
+/*Fin de estilos para form-content-edad*/
+
+/*Estilos para el combo-box de fecha de naciemiento*/
+.form-content-FN {
+    display: flex;
+    flex-direction: column; /* Solo afecta el label */
+    width: 30%;
+}
+
+.form-content-FN label {
+    margin-bottom: 10px; /* Espaciado entre el label y los combo-box */
+    font-size: 14px; /* Opcional: ajustar tamaño del texto */
+    font-weight: bold; /* Opcional: resaltar el texto */
+}
+
+.form-content-FN select {
+    display: inline-block; /* Asegura que los select se mantengan en fila */
+    margin-right: 5px; /* Espaciado horizontal entre select */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+}
+
+
+/*Fin de fecha de nacimiento*/
+.form-content-edad-FN {
+    display: flex;
+    align-items: center;
+    gap: 100px; /* Espaciado entre los elementos */
+
+}
+
+.form-content-edad-FN select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*Estilos para combo box horario-entrada-salida*/
+.form-content-horaio-atencion {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-content-horaio-atencion label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#horario_entrada {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px; /* Ajusta el ancho según prefieras */
+}
+#horario_salida{
+    margin: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px; /* Ajusta el ancho según prefieras */
+}
+
+
+/*Estilos para Checkboxes*/
+.form-content-dias-atencion .checkboxes input[type="checkbox"] {
+    width: 20px; /* Anchura del checkbox */
+    height: 20px; /* Altura del checkbox */
+    
+    margin: 5px; /* Espaciado entre el checkbox y el texto */
+}
+
+.form-content-dias-atencion .checkboxes label {
+    font-size: 16px; /* Ajusta el tamaño del texto si es necesario */
+    display: inline;
+    text-align: center;
+    margin: 5px; /* Espaciado entre filas */
+}
+
+
+.btn1 {
+    width: 30%;
+    height: 40px;
+    border: none;
+    border: 2px solid #00d2d9;
+    background: transparent;
+    z-index: 1;
+    position: relative; /* Añadido */
+}
+.btn1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    left: 0;
+    top: -200%;
+    border-radius: 50%;
+    z-index: -1;
+}
+.btn1:hover {
+    top: 0;
+    border-radius: 0%;
+    background-color: #00d2d9;
+    transition: 0.3s;
+}
+@media only screen and (max-width: 1310px) {
+
+    .form-content label {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        font-size: 17px;
+        color: #000;
+        pointer-events: none;
+        transition: 0.3s;
+    }
+}
